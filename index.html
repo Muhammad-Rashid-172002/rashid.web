@@ -1,32 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Muhammad Rashid — Founder & CEO of Korvenza | AI & Product Engineering</title>
-    <meta name="description" content="Muhammad Rashid is Founder & CEO of Korvenza and a software/product engineer building production-ready AI products, mobile apps, SaaS platforms and real-time systems." />
+    <title>Muhammad Rashid — Flutter & AI App Developer · Founder & CEO of Korvenza</title>
+    <meta name="description" content="Muhammad Rashid is a Flutter & AI app developer and Founder & CEO of Korvenza, building production-ready AI products, mobile apps, SaaS platforms and real-time systems." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#070809" />
+    <meta name="color-scheme" content="dark light" />
     <link rel="canonical" href="https://muhammadrashid.com/" />
     <link rel="icon" type="image/png" href="/icon.png" />
     <link rel="apple-touch-icon" href="/icon.png" />
+    <!-- Apply the saved / OS theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+        if (t === 'light') document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f6f7f9');
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="/rashid.webp" type="image/webp" fetchpriority="high" />
     <meta property="og:site_name" content="Muhammad Rashid" />
-    <meta property="og:title" content="Muhammad Rashid — Founder & CEO of Korvenza" />
-    <meta property="og:description" content="Founder-led product engineering across AI, mobile, SaaS, marketplaces and real-time systems." />
+    <meta property="og:title" content="Muhammad Rashid — Flutter & AI App Developer · Founder of Korvenza" />
+    <meta property="og:description" content="Founder-led product engineering across Flutter, AI, mobile, SaaS, marketplaces and real-time systems." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://muhammadrashid.com/" />
     <meta property="og:image" content="https://muhammadrashid.com/rashid.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Muhammad Rashid — Founder & CEO of Korvenza" />
+    <meta name="twitter:title" content="Muhammad Rashid — Flutter & AI App Developer · Founder of Korvenza" />
     <meta name="twitter:description" content="Building AI products and digital platforms from idea to production." />
     <meta name="twitter:image" content="https://muhammadrashid.com/rashid.jpg" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muhammad Rashid","jobTitle":"Founder & CEO, Software Product Engineer","worksFor":{"@type":"Organization","name":"Korvenza","url":"https://korvenzatech.com"},"url":"https://muhammadrashid.com/","image":"https://muhammadrashid.com/rashid.jpg","email":"mailto:ceo@korvenzatech.com","sameAs":["https://github.com/Muhammad-Rashid-172002","https://www.linkedin.com/in/muhammad-rashid-flutterdev/","https://korvenzatech.com"],"knowsAbout":["Flutter","Firebase","TypeScript","AI Product Engineering","LLM Integration","Google Cloud","SaaS","Marketplace Platforms"]}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Muhammad Rashid — Founder & CEO","url":"https://muhammadrashid.com/","description":"Founder portfolio of Muhammad Rashid, Founder & CEO of Korvenza and software/product engineer.","author":{"@type":"Person","name":"Muhammad Rashid"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muhammad Rashid","jobTitle":"Founder & CEO, Flutter & AI App Developer","worksFor":{"@type":"Organization","name":"Korvenza","url":"https://korvenzatech.com"},"url":"https://muhammadrashid.com/","image":"https://muhammadrashid.com/rashid.jpg","email":"mailto:ceo@korvenzatech.com","sameAs":["https://github.com/Muhammad-Rashid-172002","https://www.linkedin.com/in/muhammad-rashid-flutterdev/","https://www.fiverr.com/mrashid170","https://korvenzatech.com"],"knowsAbout":["Flutter","Dart","Firebase","TypeScript","AI Product Engineering","LLM Integration","Gemini","Google Cloud","SaaS","Marketplace Platforms"]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Muhammad Rashid — Founder & CEO","url":"https://muhammadrashid.com/","description":"Portfolio of Muhammad Rashid, Flutter & AI app developer and Founder & CEO of Korvenza.","author":{"@type":"Person","name":"Muhammad Rashid"}}</script>
   </head>
   <body>
+    <noscript><p style="padding:2rem;font-family:sans-serif">Muhammad Rashid — Flutter & AI App Developer and Founder of Korvenza. Enable JavaScript to view the full portfolio, or email <a href="mailto:ceo@korvenzatech.com">ceo@korvenzatech.com</a>.</p></noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
