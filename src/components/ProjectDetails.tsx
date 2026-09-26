@@ -21,7 +21,7 @@ function usePageMeta(title: string, description: string, path: string) {
     const prevCanonical = canonical?.getAttribute('href');
     document.title = title;
     desc?.setAttribute('content', description);
-    canonical?.setAttribute('href', `https://muhammadrashid.com${path}`);
+    canonical?.setAttribute('href', `https://rashid.korvenzatech.com${path}`);
     return () => {
       document.title = SITE_TITLE;
       desc?.setAttribute('content', SITE_DESCRIPTION);
